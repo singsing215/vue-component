@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import "../styles/Bar.scss";
+
 
 export default {
     name: 'Bar'

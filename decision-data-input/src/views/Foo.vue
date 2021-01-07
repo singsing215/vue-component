@@ -6,7 +6,7 @@
 
 
 <script>
-import "../styles/Foo.scss";
+
 
 export default {
     name: 'Foo'
