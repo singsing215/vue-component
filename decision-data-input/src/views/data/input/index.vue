@@ -1,6 +1,6 @@
 <template>
-  <div class='bar'>
-      <h1>Bar</h1>
+  <div class='input'>
+      <h1>input</h1>
   </div>
 </template>
 
@@ -8,6 +8,6 @@
 
 
 export default {
-    name: 'Bar'
+    name: 'input'
 }
 </script>
