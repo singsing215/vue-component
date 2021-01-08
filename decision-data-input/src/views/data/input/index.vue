@@ -135,10 +135,10 @@ export default {
       console.log(this.pageSize)
       this.getList();
     },
-    handleCurrentChange(page) {
-      this.getList(page);
+    handleCurrentChange() {
+      this.getList();
     },
-    async getList(page) {
+    async getList() {
       this.totalCount = this.tableData.length;
     },
   },
