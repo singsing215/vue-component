@@ -14,7 +14,7 @@
           :page-sizes="[5, 10, 15, 20]"
           :page-size="5"
           layout="total, sizes, prev, pager, next, jumper"
-          :total="rawList.length"
+          :total="tableData.length"
         ></el-pagination>
       </div>
     </div>
@@ -25,28 +25,27 @@
 export default {
   mounted() {
     for (var i = 0; i < 5; i++) {
-      this.pageList.push(this.rawList[i]);
+      this.pageList.push(this.tableData[i]);
     }
   },
 
   methods: {
     handleSizeChange: function (val) {
       this.pageSize = val;
-      this.handleCurrentChange(this.currentPage);
+      var currentPage = this.currentPage;
+      this.handleCurrentChange(currentPage);
     },
     handleCurrentChange: function (currentPage) {
-      this.currentPage = currentPage;
-      var list = this.rawList;
-      this.currentChangePage(list, currentPage);
-      console.log(list);
+      var tableData = this.tableData;
+      this.currentChangePage(tableData, currentPage);
     },
-    currentChangePage(list, currentPage) {
+    currentChangePage(tableData, currentPage) {
       let from = (currentPage - 1) * this.pageSize;
       let to = currentPage * this.pageSize;
       this.pageList = [];
       for (; from < to; from++) {
-        if (list[from]) {
-          this.pageList.push(list[from]);
+        if (tableData[from]) {
+          this.pageList.push(tableData[from]);
         }
       }
     },
@@ -56,7 +55,7 @@ export default {
       currentPage: 1,
       pageSize: 10,
       pageList: [],
-      rawList: [
+      tableData: [
         {
           name: "16协信01",
           marketValue: 691861.0999317318,

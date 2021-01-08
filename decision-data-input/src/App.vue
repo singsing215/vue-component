@@ -2,7 +2,7 @@
   <div id="app">
     <p>
       <router-link to="/">home</router-link>
-      <router-link to="/data/inner">inner</router-link>
+      <router-link to="/data/inner">paging</router-link>
       <router-link to="/data/input">input</router-link>
       <router-link to="/data/output">output</router-link>
     </p>
