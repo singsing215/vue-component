@@ -15,6 +15,6 @@ const store = new Vuex.Store({
 })
 
 store.commit('increment');
-console.log(store.state.count)
+
 
 export default store

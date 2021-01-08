@@ -28,8 +28,7 @@
               </el-table-column>
               <el-table-column prop="type" label="类型" width="180">
               </el-table-column>
-              <el-table-column prop="belong" label="数据">
-              </el-table-column>
+              <el-table-column prop="belong" label="数据"> </el-table-column>
             </el-table>
           </el-card>
         </el-col>
@@ -54,10 +53,7 @@ export default {
       this.handleCurrentChange(currentPage);
     },
     handleCurrentChange: function (currentPage) {
-      var tableData = this.tableData;
-      this.currentChangePage(tableData, currentPage);
-    },
-    currentChangePage(tableData, currentPage) {
+      let tableData = this.tableData;
       let from = (currentPage - 1) * this.pageSize;
       let to = currentPage * this.pageSize;
       this.pageList = [];
@@ -92,16 +88,11 @@ export default {
           belong: "渠统",
         },
         {
-          name: "用户信息查询",
-          type: "内据",
-          belong: "用心",
-        },
-        {
           name: "用户中机标签",
           type: "数据中台型数据",
           belong: "数据",
         },
-         {
+        {
           name: "用户中签",
           type: "数据中据",
           belong: "大数据",
@@ -257,5 +248,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 </style>
