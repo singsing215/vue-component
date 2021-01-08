@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: () => import('../views/home') },
-  { path: '/data/inner', component: () => import('../views/data/inner') },
+  { path: '/data/paging', component: () => import('../views/data/paging') },
   { path: '/data/input', component: () => import('../views/data/input') },
   { path: '/data/output', component: () => import('../views/data/output') }
 

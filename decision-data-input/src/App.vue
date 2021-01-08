@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <p>
-      <router-link to="/">home</router-link>
-      <router-link to="/data/inner">paging</router-link>
-      <router-link to="/data/input">input</router-link>
-      <router-link to="/data/output">output</router-link>
+      <router-link to="/">home </router-link>
+      <router-link to="/data/paging">paging </router-link>
+      <router-link to="/data/input">input </router-link>
+      <router-link to="/data/output">output </router-link>
     </p>
     <router-view></router-view>
   </div>
