@@ -56,8 +56,6 @@ export default {
       let tableData = this.tableData;
       let from = (currentPage - 1) * this.pageSize;
       let to = currentPage * this.pageSize;
-      console.log(from)
-      console.log(to)
       this.pageList = [];
       for (from; from < to; from++) {
         if (tableData[from]) {
